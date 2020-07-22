@@ -15,29 +15,36 @@ Hence, the answer: {2, 3}. */
 #include <stdio.h>
 int main()
 {
-    int n,m;
-    scanf("%d\n", &n);
-    int num1[n];
-    for(int i=0;i<n;i++)
+    int goals_scored1,goals_scored2;
+    printf("Enter the number of matches of team A here: ");
+    scanf("%d\n" , &goals_scored1);
+    int team_a[goals_scored1];
+    
+    for(int i = 0;i < goals_scored1;i++)
     {
-        scanf("%d", &num1[i]);
+        printf("Enter the goals scored by team A here: ");
+        scanf("%d", &team_a[i]);
     }
-    scanf("%d", &m);
-    int num2[m];
-    for(int i=0;i<m;i++)
+    printf("Enter the number of matches of team B here: ");
+    scanf("%d", &goals_scored2);
+    int team_b[goals_scored2];
+    for(int i = 0;i < goals_scored2;i++)
     {
-        scanf("%d\n", &num2[i]);
+        printf("Enter the goals scored by team B here: ");
+        scanf("%d\n", &team_b[goals_Scored2]);
     }
     int score;
-    for(int i=0;i<m;i++)
+    int final_array[100];
+    for(int i = 0;i < goals_scored2;i++)
     {
         score = 0;
-        for(int j=0;j<n;j++)
+        for(int j = 0;j < goals_scored1;j++)
         {
-            if(num2[i]>=num1[j])
+            if(team_a[i] >= team_b[j])
             score++;
+            score++ = final_array[100]; 
         }
-        printf("%d\n",score);
+        printf("%d\n",final_array[100]);
     }
     return 0;
 }
