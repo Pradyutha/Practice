@@ -1,0 +1,27 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+        char result_string[100] , input_string[100];
+    int i, j;
+    scanf("%s", input_string);
+    strcpy(result_string , input_string);
+    for(i = 0; i < strlen(input_string) ; i++)
+    {
+        if(s[i] == '+' && s[i+1] == '+')
+        {
+            result_string[i]='-';
+            result_string[i+1]='-';
+            printf("%s\n" , result_string);
+        }
+        strcpy(result_string , input_string);
+    }   
+    return 0;
+}
+
+/* ++++
+o/p:
+++--
++--+
+--++ */
